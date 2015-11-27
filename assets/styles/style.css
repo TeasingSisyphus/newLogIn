@@ -1,0 +1,31 @@
+/*.active:hover{
+	background-color: #F2F2F2;
+}*/
+
+/*ul #tester a:hover{
+		background-color: #F2F2F2;	
+};*/
+
+/*li a:hover{
+
+	outline-style: dashed;
+	outline-color: red;
+
+}*/
+/*div.col-xs-6 h3 small:hover{
+	outline-style: solid;
+	outline-color: blue;
+
+}*/
+/*#tester2{
+	outline-style: solid;
+	outline-color: blue;
+}
+*/
+a.navTab:hover {
+	background-color: #F2F2F2 !important;
+	border-style: none;
+}
+a{
+	color: ;
+}

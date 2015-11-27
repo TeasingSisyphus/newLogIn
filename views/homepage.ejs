@@ -1,29 +1,30 @@
   <body>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <div ng-app='app'>
     <div ng-controller='homepageController as homepage' >
         <nav class="dropdown">
         <ul class="nav nav-tabs">
-          <li role="presentation" class="active"  ng-click='homepage.goToTab(0)'><a>Home</a>
+          <li role="presentation" class="active"  ng-click='homepage.goToTab(0)'><a class='navTab'>Home</a>
           </li>
           <li role="presentation" class="dropdown">
-            <a href="rules.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a href="rules.html" class="dropdown-toggle navTab" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Rules<span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li ng-click='homepage.goToRules(1)'>Ace</li>
-            <li ng-click='homepage.goToRules(2)'>Two</li>
-          </ul>
-        </li>
-          <li role="presentation" class="active"  ng-click='homepage.goToTab(2)'><a role='button' aria-haspopup='true' aria-expanded='false'>Cuttle</a></li>
-          <li role="presentation" class="active"  ng-click='homepage.goToTab(3)'><a role='button' aria-haspopup='true' aria-expanded='false'>About Us</a></li>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li ng-click='homepage.goToRules(1)'>Ace</li>
+              <li ng-click='homepage.goToRules(2)'>Two</li>
+            </ul>
+
+          </li>
+          <li role="presentation" class="active navHover"  ng-click='homepage.goToTab(2)'><a role='button' aria-haspopup='true' aria-expanded='false' class='navTab'>Cuttle</a></li>
+          <li role="presentation" class="active navHover"  ng-click='homepage.goToTab(3)'><a role='button' aria-haspopup='true' aria-expanded='false' class='navTab'>About Us</a></li>
         </ul>
       </nav>
     <div id='homepageWrapper' ng-show='homepage.tabIndex===0' ng-cloak>
         <div class="row">
           <div class="col-xs-3"></div>
           <div class="col-xs-6">
-            <h3>Welcome to Iceborn Gaming <small>Engineered by Ryan, powered by Ryan, supported by Sam and David</small></h3>
+            <h3 id="hoverthing">Welcome to Iceborn Gaming <small>Engineered by Ryan, powered by Ryan, supported by Sam and David</small></h3>
           </div>
         </div>
         <div class="row">
