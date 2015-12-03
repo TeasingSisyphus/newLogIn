@@ -14,4 +14,12 @@ app.controller('homepageController', function($scope) {
 		$scope.homepage.tabIndex = 1;
 		$scope.homepage.rulesIndex = index;
 	};
+
+	this.signUp = function() {
+		console.log("signUp");
+	};
+
+	this.login = function () {
+		console.log("login");
+	};
 });
